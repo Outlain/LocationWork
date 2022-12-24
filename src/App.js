@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import map from './images/revised.png'
+import Answer from './views/Answer.js'
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <section  className='hippo'>
+        <img src={map} alt='map'></img>
+      </section>
+      <div className='right-side'>
+        <h1>Welcome to Geolocation Services <br/><br/> <h6>Warning: Will automatically copy results to your cliboard (Crlt+C) </h6></h1>
+        <Answer />
+      </div>
     </div>
   );
 }

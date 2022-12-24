@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 15, 25);
+}
+.App {
+  height: 85%;
+  width: 85%;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  height: 100%;
+  width: 40%;
+  background-color: rgb(6, 15, 25);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1%;
+}
+
+section img {
+  height: 100%;
+  width: 65%;
+}
+
+.right-side {
+  height: 100%;
+  width: 60%;
+  background-color: rgb(6, 15, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  /* background-color: rgb(13, 20, 39); */
+  height: 10%;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+h1 h6{
+  font-size: 0.9rem;
+}
+input {
+  color: black;
+}
+select {
+  color: black;
+}
+select option {
+  color: black;
+}
+.form {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side form {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side form label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-side form label option {
+}
+
+.answer {
+  height: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.2rem;
+}
+.hippo {
+  position: relative;
+}
+
+.global-map-box {
+  background-color: rgba(200, 97, 97, 0.4);
+  border: solid red 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(212, 11, 11, 0.8)
+}
+.South-Delray-West,
+.South-Delray-Mid,
+.South-Delray-East {
+  position: absolute;
+  top: 70%;
+  right: 6%;
+  height: 15%;
+  padding: 0px 5%;
+}
+.South-Boca-West,
+.South-Boca-Mid,
+.South-Boca-East {
+  position: absolute;
+  top: 80%;
+  right: 6%;
+  height: 15%;
+  padding: 0px 5%;
+}
+.South-Boynton-West,
+.South-Boynton-Mid,
+.South-Boynton-East {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  height: 15%;
+  padding: 0px 5%;
+}
+.Central-West-Palm-Beach-West,
+.Central-West-Palm-Beach-Mid,
+.Central-West-Palm-Beach-East {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  height: 18%;
+  padding: 0px 4%;
+}
+.Central-Lake-Worth-West,
+.Central-Lake-Worth-Mid,
+.Central-Lake-Worth-East {
+  position: absolute;
+  top: 44%;
+  right: 3%;
+  height: 18%;
+  padding: 0px 4%;
+}
+.North-Jupiter-Mid,
+.North-Jupiter-East {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  height: 18%;
+  padding: 0px 4%;
+}
+.North-Palm-Beach-Gardens-West,
+.North-Palm-Beach-Gardens-Mid,
+.North-Palm-Beach-Gardens-East {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  height: 18%;
+  padding: 0px 4%;
+}
+.North-North-Palm-Beach-Mid {
+  position: absolute;
+  top: 16%;
+  right: 12%;
+  height: 15%;
+  padding: 0px 2%;
 }
